@@ -30,3 +30,7 @@ devtools::install_github("busenurk/rinfis")
     means clustering in medical images, *Advances in Pattern
     Recognition*, 226-230.
     [📃](https://www.worldscientific.com/doi/10.1142/9789812772381_0037)
+
+-   Bezdek, J. C., Hall, L.A., Clark, L.P. (1993) Review of MR
+    segmentation technique in pattern recognition, Medical Physics Vol.
+    10 (20), 33-48. [📃](https://pubmed.ncbi.nlm.nih.gov/8413011/)
