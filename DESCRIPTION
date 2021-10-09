@@ -1,0 +1,19 @@
+Package: rinfis
+Title: Intuitionistic Fuzzy Inference Package
+Imports: methods, stats, dplyr
+Suggests: 
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+Version: 0.0.0.9000
+Authors@R: c(person("Erol", "Egrioglu", role = "aut"),
+           person("Eren", "Bas", role = "aut"),
+           person("Busenur", "Kizilaslan", email = "busenur.sarica@gmail.com", role = c("aut","cre")))
+Description: write sth.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+Config/testthat/edition: 3

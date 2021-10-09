@@ -1,0 +1,35 @@
+---
+title: "An Intuitionistic Way of Clustering: ifcm"
+author: 
+  - Erol Egrioglu
+  - Eren Bas
+  - Busenur Kizilaslan
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+link-citations: true
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{An Intuitionistic Way of Clustering: ifcm}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(rinfis)
+```
+
+# Introduction
+
+# Installation
+
+# Fuzzy clustering with Yager's Intuitionistic Fuzzy Generator  
+
+# Fuzzy clustering with Sugeno's Intuitionistic Fuzzy Generator
+
+# References
