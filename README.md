@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# Intuitionistic Fuzzy Inference Systems
+# Intuitionistic Fuzzy Inference Systems 🤖
 
 <!-- badges: start -->
 <!-- badges: end -->
