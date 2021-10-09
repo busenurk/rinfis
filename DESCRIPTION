@@ -9,7 +9,7 @@ Version: 0.0.0.9000
 Authors@R: c(person("Erol", "Egrioglu", role = "aut"),
            person("Eren", "Bas", role = "aut"),
            person("Busenur", "Kizilaslan", email = "busenur.sarica@gmail.com", role = c("aut","cre")))
-Description: write sth.
+Description: The rinfis package aims to create user-friendly functions about intuitionistic fuzzy inference systems and thus support the works in this field.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

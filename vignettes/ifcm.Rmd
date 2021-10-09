@@ -26,10 +26,61 @@ library(rinfis)
 
 # Introduction
 
-# Installation
+In this vignette, we explain how the `ifcm` function in the **rinfis** package works. 
 
-# Fuzzy clustering with Yager's Intuitionistic Fuzzy Generator  
+Fuzzy c-means clustering algorithm is proposed by Bezdek et al.$^{[3]}$ Intuitionistic fuzzy c-means clustering algorithm is proposed with different versions. In this package Chaira et al.(2006) and Chaira (2011) are taken as references.
 
-# Fuzzy clustering with Sugeno's Intuitionistic Fuzzy Generator
+Intuitionistic fuzzy set is an extension of classical fuzzy set. The advantage of intuitionistic fuzzy set is to use the hesitation degree. The membership function is always not accurately defined due to the personal error and so intuitionistic fuzzy set gives better result where uncertainty in the form of hesitation degree is used.$^{[1]}$  
+
+An intuitionistic fuzzy set in $X$ is given by:
+
+$$A=\{x,\mu_{A}(x),v_{A}(X)|x\in X\}$$
+
+where $\mu_{A}(x)\to [0,1]$, $v_{A}(x)\to [0,1]$ are the membership and non-membership degrees with the condition $0\leq \mu_{A}(x)+v_{A}(x)\leq1$.
+
+The hesitation degree $\pi_{A}(x)$ is given by:
+
+$$\pi_{A}(x)=1-\mu_{A}(x)-v_{A}(x)$$
+where $0\leq\pi_{A}(x)\leq 1$.
+
+
+The type of fuzzy generator determines how to calculate the non-membership degree. In `ifcm` function, Yager and Sugeno type fuzzy generator can be selected by fgen parameter. 
+
+
+## Fuzzy clustering with Yager's Intuitionistic Fuzzy Generator (Default)  
+
+If `fgen="Yager"`, intuitionistic fuzzy generator is created from Yager generating function.
+
+$A_{\lambda}^{IFS}=\{x,\mu_{A}(x),(1-\mu_{A}(x)^{\alpha})^{1/\alpha}|x\in X\}$
+
+<br>
+
+and the hesitation degree is given by:
+
+$$\pi_{A}(x)=1-\mu_{A}(x)-(1-\mu_{A}(x)^{\alpha})^{1/\alpha}$$
+In `ifcm` function the default of $\alpha$ corresponds to 0.85.$^{[1]}$ 
+
+
+## Fuzzy clustering with Sugeno's Intuitionistic Fuzzy Generator
+
+If `fgen="Sugeno"`, intuitionistic fuzzy generator is created from Sugeno generating function.
+
+$A_{\lambda}^{IFS}=\{x,\mu_{A}(x),\frac{1-\mu_{A}(x)}{1+\lambda\mu_{A}(x)}|x\in X\}$
+
+with $\lambda\geq0$.
+
+<br>
+
+Thus the hesitation degree is given by:
+
+$$\pi_{A}(x)=1-\mu_{A}(x)-\frac{1-\mu_{A}(x)}{1+\lambda\mu_{A}(x)}$$
+In `ifcm` function the default of $\lambda$ corresponds to 2.$^{[2]}$ 
 
 # References
+
+[1] Chaira, T. (2011) A novel intuitionistic fuzzy C means clustering algorithm and its application
+to medical images, _Applied Soft Computing_, Vol. 11(2), 1711-1717. [📃](https://www.sciencedirect.com/science/article/pii/S1568494610001067)
+
+[2] Chaira, T., Ray, A. K., Salvetti, O. (2006) Intuitionistic fuzzy C means clustering in medical images, _Advances in Pattern Recognition_, 226-230. [📃](https://www.worldscientific.com/doi/10.1142/9789812772381_0037)
+
+[3] Bezdek, J. C., Hall, L.A., Clark, L.P. (1993) Review of MR segmentation technique in pattern recognition, Medical Physics Vol. 10 (20), 33-48.[📃](https://pubmed.ncbi.nlm.nih.gov/8413011/) 

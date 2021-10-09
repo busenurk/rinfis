@@ -29,7 +29,8 @@ ifcm(
 
 \item{epsilon}{Error value}
 
-\item{fgen}{The type of intuitionistic fuzzy generator (Yager or Sugeno)}
+\item{fgen}{The type of intuitionistic fuzzy generator. \code{Yager} or \code{Sugeno} type fuzzy generators
+can be selected. (Default="Yager")}
 
 \item{lambda}{The constant}
 

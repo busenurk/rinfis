@@ -8,7 +8,8 @@
 #'@param alpha degree of hesitation
 #'@param maxitr Maximum number of iterations.
 #'@param epsilon Error value
-#'@param fgen The type of intuitionistic fuzzy generator (Yager or Sugeno)
+#'@param fgen The type of intuitionistic fuzzy generator. \code{Yager} or \code{Sugeno} type fuzzy generators
+#'can be selected. (Default="Yager")
 #'@param lambda The constant
 #'@param verbose If TRUE, make some output during learning.
 #'@author Erol Egrioglu, Eren Bas and Busenur Kizilaslan \cr Maintainer: Busenur Kizilaslan
