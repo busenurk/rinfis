@@ -76,6 +76,13 @@ Thus the hesitation degree is given by:
 $$\pi_{A}(x)=1-\mu_{A}(x)-\frac{1-\mu_{A}(x)}{1+\lambda\mu_{A}(x)}$$
 In `ifcm` function the default of $\lambda$ corresponds to 2.$^{[2]}$ 
 
+# Example
+
+```{r}
+
+```
+
+
 # References
 
 [1] Chaira, T. (2011) A novel intuitionistic fuzzy C means clustering algorithm and its application
