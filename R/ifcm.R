@@ -81,7 +81,9 @@ x<-as.matrix(x)
 
   for (v in 1:maxitr){
     ustar=Uold
-    #kume merkezleri
+
+    #cluster centers
+
     vstar=matrix(NA, ncol=ncol(x), nrow=c)
     c1=ustar^m
 
@@ -108,7 +110,8 @@ x<-as.matrix(x)
       for(j in 1:c){
         t1=d.square[j,i]/d.square[,i]
 
-        #guncellenmis uyelikler
+        #updated memberships
+
         Uup[i,j]=1/sum(t1)
       }
     }

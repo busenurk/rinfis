@@ -37,7 +37,7 @@ to medical images, _Applied Soft Computing_, Vol. 11(2), 1711-1717. [📃](https
 
 - Chaira, T., Ray, A. K., Salvetti, O. (2006) Intuitionistic fuzzy C means clustering in medical images, _Advances in Pattern Recognition_, 226-230. [📃](https://www.worldscientific.com/doi/10.1142/9789812772381_0037)
 
-- Bezdek, J. C., Hall, L.A., Clark, L.P. (1993) Review of MR segmentation technique in pattern recognition, Medical Physics Vol. 10 (20), 33-48.
+- Bezdek, J. C., Hall, L.A., Clark, L.P. (1993) Review of MR segmentation technique in pattern recognition, _Medical Physics_, Vol. 10 (20), 33-48.
 [📃](https://pubmed.ncbi.nlm.nih.gov/8413011/)
 
 
