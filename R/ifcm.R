@@ -12,6 +12,8 @@
 #'can be selected. (Default="Yager")
 #'@param lambda The constant
 #'@param verbose If TRUE, make some output during learning.
+#'@param standardize If TRUE the data matrix is standardized. If variables are in the same units already,
+#'you might not wish to standardize. Default is \code{standardize=TRUE}.
 #'@author Erol Egrioglu, Eren Bas and Busenur Kizilaslan \cr Maintainer: Busenur Kizilaslan
 #'\email{busenur.sarica@@gmail.com}
 #'@references
@@ -40,13 +42,15 @@
 #'@export ifcm
 #'@examples
 #'ifcm(mtcars$mpg,2)
-ifcm <- function(x,c,m=2,alpha=0.85,maxitr=100,epsilon=0.03,fgen=c("Yager","Sugeno"),lambda=2, verbose=FALSE){
+ifcm <- function(x,c,m=2,alpha=0.85,maxitr=100,epsilon=0.03,fgen=c("Yager","Sugeno"),lambda=2, verbose=FALSE,standardize = TRUE){
 x<-as.matrix(x)
   n=nrow(x)
   pi=matrix(NA, ncol=c,nrow=n)
   ustar=matrix(NA, ncol=c, nrow=n)
   r=matrix(runif(n*c,min=0,max=1), ncol=c, nrow=n)
   u=matrix(NA, ncol=c, nrow=n)
+
+  if(standardize == T){x<-scale(x)}
 
   if(sum(is.na(x))>0)
   stop("Check the missing value.")
