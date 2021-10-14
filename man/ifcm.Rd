@@ -38,7 +38,7 @@ can be selected. (Default="Yager")}
 \item{verbose}{If TRUE, make some output during learning.}
 
 \item{standardize}{If TRUE the data matrix is standardized. If variables are in the same units already,
-you might not wish to standardize. Default is \code{standardize=TRUE}}
+you might not wish to standardize. Default is \code{standardize=TRUE}.}
 }
 \value{
 An object of class "ifcm" which is a list with components:\cr\cr
